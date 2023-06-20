@@ -12,7 +12,7 @@ const Shop = () => {
   const [amount, setAmount] = useState(1);
   const networkId = 5777;
 
-  const CONTRACT_ADDRESS = "0x87524F735750FF2C95951e519E4240a63B47Aa84";
+  const CONTRACT_ADDRESS = "0x87524F735750FF2C95951e519E4240a63B47Aa84"; // CHANGE THIS
   const decimals = 18;
 
   // Array of seller addresses
