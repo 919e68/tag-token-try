@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "79226949-4806-45ab-8bdb-cb0e218aaa2c",
+		"name": "tag-token-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "691561"
+	},
+	"item": [
+		{
+			"name": "transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"from\": 0,\r\n  \"to\": \"0x59ff9EcfC0999b3d7Ce20e2097a29E021a64C9fB\",\r\n  \"amount\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/transfer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "account-01",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/balance/0x7CFA91BFA747D3C2cb0ee5244eb919c0BFC441cb",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"balance",
+								"0x7CFA91BFA747D3C2cb0ee5244eb919c0BFC441cb"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
